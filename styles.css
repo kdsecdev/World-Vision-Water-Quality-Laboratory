@@ -1,0 +1,145 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Header Styling */
+header {
+    background: #0278c7; /* Light Blue */
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+    background: #ffa500; /* Orange */
+    transform: scale(1.1);
+}
+
+nav ul li a.active {
+    background: #ffa500;
+    font-weight: bold;
+}
+
+/* Main Section */
+main {
+    padding: 2rem 0;
+}
+
+main .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #0278c7;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* Buttons */
+button, input[type="submit"] {
+    background: #0278c7;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: #ffa500;
+    transform: scale(1.05);
+}
+
+/* Form Styling */
+form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    outline: none;
+    border-color: #0278c7;
+}
+
+/* Links in Resources */
+.resources ul li a {
+    text-decoration: none;
+    color: #0278c7;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.resources ul li a:hover {
+    color: #ffa500;
+    transform: translateX(5px);
+}
